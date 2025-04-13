@@ -1,0 +1,21 @@
+name: string @index(term) .
+age: int .
+email: string @index(exact) .
+industry: string @index(term) .
+location: string .
+friend: [uid] @reverse .
+works_for: uid @reverse .
+
+type Person {
+  name: name
+  age: age
+  email: email
+  friend: friend
+  works_for: works_for
+}
+
+type Company {
+  name: name
+  industry: industry
+  location: location
+}
