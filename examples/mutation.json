@@ -1,0 +1,37 @@
+{
+  "set": [
+    {
+      "uid": "_:alice",
+      "dgraph.type": "Person",
+      "name": "Alice",
+      "age": 30,
+      "email": "alice@example.com"
+    },
+    {
+      "uid": "_:bob",
+      "dgraph.type": "Person",
+      "name": "Bob",
+      "age": 25,
+      "email": "bob@example.com"
+    },
+    {
+      "uid": "_:dgraph",
+      "dgraph.type": "Company",
+      "name": "Dgraph Labs",
+      "industry": "Technology",
+      "location": "San Francisco"
+    },
+    {
+      "uid": "_:alice",
+      "works_for": {
+        "uid": "_:dgraph"
+      }
+    },
+    {
+      "uid": "_:alice",
+      "friend": {
+        "uid": "_:bob"
+      }
+    }
+  ]
+}
