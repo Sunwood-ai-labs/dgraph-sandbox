@@ -1,4 +1,14 @@
-# 🌟 Dgraphデモプロジェクト
+<h1 align="center">🌟 Dgraphデモプロジェクト</h1>
+
+<p align="center">
+  <img src="docs/header.png" alt="Dgraph Demo Project">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Dgraph-Latest-blue?style=flat-square&logo=dgraph" alt="Dgraph">
+  <img src="https://img.shields.io/badge/Docker-Latest-blue?style=flat-square&logo=docker" alt="Docker">
+  <img src="https://img.shields.io/badge/GraphQL-Latest-pink?style=flat-square&logo=graphql" alt="GraphQL">
+</p>
 
 このプロジェクトは、グラフデータベースDgraphの基本的な使い方を学ぶためのデモ環境を提供します。
 
