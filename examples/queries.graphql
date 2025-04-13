@@ -1,0 +1,59 @@
+# 全ての人を取得
+{
+  people(func: type(Person)) {
+    uid
+    name
+    age
+    email
+    friend {
+      name
+      age
+    }
+    works_for {
+      name
+      industry
+    }
+  }
+}
+
+# 特定の名前で検索
+{
+  findPerson(func: eq(name, "Alice")) {
+    uid
+    name
+    age
+    email
+    friend {
+      name
+      age
+    }
+    works_for {
+      name
+      industry
+      location
+    }
+  }
+}
+
+# 年齢でフィルタリング
+{
+  adults(func: type(Person)) @filter(ge(age, 25)) {
+    name
+    age
+    email
+  }
+}
+
+# 会社と従業員を取得
+{
+  companies(func: type(Company)) {
+    name
+    industry
+    location
+    ~works_for @filter(ge(age, 25)) {
+      name
+      age
+      email
+    }
+  }
+}
